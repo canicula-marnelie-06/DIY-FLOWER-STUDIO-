@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | DIY Flower Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/homepage.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+  <div class="logo">
+    <a href="home.html"><img src="images/Logo.jpg" alt="Logo"></a>
+    <h3>DIY Flower Studio</h3>
+  </div>
+
+    <!-- Hamburger -->
+  <div id="hamburger" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="home.html" class="active">Home</a></li>
+    <li><a href="Shop.html">Shop</a></li>
+    <li><a href="tutorials.html">Tutorials</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+<li><a href="Shop.html">Cart</a></li>
+
+    <li class="profile-dropdown" tabindex="0">
+      <img src="images/profile.jpg" alt="User Profile">
+      <ul class="dropdown-menu">
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="login.html">Logout</a></li>
+        <li><a href="ordertracking.html">Order Track</a></li>
+      </ul>
+    </li>
+  </ul>
+ </nav>
+
+</header>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <div class="welcome-container">
+      <h1>Welcome Back 🌸</h1>
+      <p>
+        We're so happy to have you here at <strong>DIY Flower Studio</strong> — your creative hub for all things floral and handmade. Explore unique crafts, learn new flower-making techniques, and bring your imagination to life.
+      </p>
+
+      <div class="welcome-buttons">
+        <button class="btn" id="open-upload-modal">Share Your Creation</button>
+        <a href="tutorials.html" class="btn btn-outline">View Tutorials</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section class="featured-section">
+    <h2>Featured Creations 🌼</h2>
+
+    <!-- Flower Pots -->
+    <div class="featured-category">
+      <h3>Flower Pots 🪴</h3>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <img src="images/Sunflowers.jpg" alt="Sunflower Pot">
+          <h4>Sunflower Pot</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Lavander.jpg" alt="Lavender Pot">
+          <h4>Lavender Pot</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Sp/product18.jpg" alt="Lavender Pot">
+          <h4>Lavender Pot</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Sp/product10.jpg" alt="Lavender Pot">
+          <h4>Lavender Pot</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bouquets -->
+    <div class="featured-category">
+      <h3>Bouquets 💐</h3>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <img src="images/Hp/Product1.jpg" alt="Pink Lilies">
+          <h4>Pink Lilies</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Sp/product6.jpg" alt="Tulip Bouquet">
+          <h4>Tulip Bouquet</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Hp/Hermoso Ramito de tulipanes y Lili, en tonos rosas🩷.jpeg" alt="Pink Lilies">
+          <h4>Pink Lilies</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Lp/featured2.jpeg" alt="Tulip Bouquet">
+          <h4>Tulip Bouquet</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Keychains -->
+    <div class="featured-category">
+      <h3>Keychains 🔑</h3>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <img src="images/Sp/product20.jpg" alt="Rose Keychain">
+          <h4>Rose Keychain</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Sp/product4.jpg" alt="Daisy Keychain">
+          <h4>Daisy Keychain</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Sp/product13.jpg" alt="Daisy Keychain">
+          <h4>Daisy Keychain</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Sp/product12.jpg" alt="Daisy Keychain">
+          <h4>Daisy Keychain</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hair Accessories -->
+    <div class="featured-category">
+      <h3>Hair Accessories 🌺</h3>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <img src="images/Sp/product2.jpg" alt="Flower Headband">
+          <h4>Flower Headband</h4>
+        </div>
+        <div class="featured-card">
+          <img src="images/Sp/product3.jpg" alt="Rosy Headband">
+          <h4>Rosy Headband</h4>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Floating Upload Button -->
+  <button class="floating-upload-btn" id="open-upload-modal" aria-label="Upload Your Creation">+</button>
+
+  <!-- Upload Modal -->
+  <div id="upload-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-upload-modal">&times;</span>
+      <h2>Upload Your Creation 🌸</h2>
+      <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <label for="creation-name">Creation Name:</label>
+        <input type="text" id="creation-name" name="creation_name" required>
+
+        <label for="creation-file">Select File:</label>
+        <input type="file" id="creation-file" name="creation_file" accept="image/*" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Write something about your creation..."></textarea>
+
+        <button type="submit" class="btn">Upload</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="floating-petals">
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+</div>
+
+
+  <script>
+  // ======== UPLOAD MODAL ========
+  const openModalBtns = document.querySelectorAll('#open-upload-modal');
+  const closeModalBtn = document.getElementById('close-upload-modal');
+  const modal = document.getElementById('upload-modal');
+
+  openModalBtns.forEach(btn => {
+    btn.addEventListener('click', () => modal.style.display = 'block');
+  });
+
+  closeModalBtn.addEventListener('click', () => modal.style.display = 'none');
+
+  window.addEventListener('click', e => {
+    if (e.target === modal) modal.style.display = 'none';
+  });
+
+  // ======== HAMBURGER MENU ========
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  const profileDropdown = document.querySelector(".profile-dropdown");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    hamburger.classList.toggle("active"); // hamburger X animation
+  });
+
+  // ======== PROFILE DROPDOWN ========
+  profileDropdown.addEventListener("click", e => {
+      e.stopPropagation(); // prevent window click from closing immediately
+      profileDropdown.classList.toggle("active");
+  });
+
+  // Close dropdown if clicking outside
+  window.addEventListener("click", e => {
+    if (!profileDropdown.contains(e.target)) {
+      profileDropdown.classList.remove("active");
+    }
+  });
+</script>
+
+<!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 DIY Flower Studio | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://pinterest.com/" target="_blank"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Pinterest"></a>
+        <a href="https://tiktok.com/" target="_blank"><img src="tik-tok.png" alt="Pinterest"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

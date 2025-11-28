@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorials | DIY Flower Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/tutorials.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+
+      <!-- Logo -->
+      <div class="logo">
+        <a href="home.html">
+          <img src="images/Logo.jpg" alt="DIY Flower Studio Logo">
+        </a>
+        <h3>DIY Flower Studio</h3>
+      </div>
+
+      <!-- Hamburger Checkbox Toggle -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="tutorials.html" class="active">Tutorials</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Shop.html">Cart</a></li>
+
+        <!-- Profile Dropdown -->
+        <li class="profile-dropdown">
+          <img src="images/profile.jpg" alt="User Profile" />
+          <ul class="dropdown-menu">
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<main    
+  <!-- Tutorials Section -->
+    <section class="tutorials">
+     <h1>🌸 DIY Flower Studio | Short Tutorials</h1>
+    <p class="intro">
+      Learn how to create beautiful handmade flowers step-by-step. Each tutorial is beginner-friendly and uses simple materials.
+     </p>
+
+  <div class="tutorial-grid">
+
+    <!-- Tutorial 1 -->
+    <div class="tutorial-card">
+      <video controls>
+        <source src="VIDEO/Diy_And_Craft.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>DIY Blooming Tulip Flower Tutorial</h3>
+      <p>
+        Material: Fuzzy wire/pipe cleaners are used to form the petals, with the finished flowers arranged in a small pot or bouquet tied with a white ribbon.
+      </p>
+      <a href="#" class="btn">View Tutorial</a>
+    </div>
+
+    <!-- Tutorial 2 -->
+    <div class="tutorial-card">
+      <video controls>
+        <source src="VIDEO/DIY_Studio_Crafts.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>DIY Saintpaulia ionantha Flower Tutorial</h3>
+      <p>
+        The flowers appear to be made from fuzzy wire/pipe cleaners (purple), assembled with green stems.
+      </p>
+      <a href="#" class="btn">View Tutorial</a>
+    </div>
+
+    <!-- Tutorial 3 -->
+    <div class="tutorial-card">
+      <video controls>
+        <source src="VIDEO/✨𝕂𝕒𝕤𝕦𝕞𝕚✨(1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>DIY Calla Lilly Flower Tutorial</h3>
+      <p>
+        These artificial flowers are created using a base of white yarn or fuzzy material, formed into the distinct calla lily shape with green stems and leaves.
+      </p>
+      <a href="#" class="btn">View Tutorial</a>
+    </div>
+
+    <!-- Tutorial 4 -->
+    <div class="tutorial-card">
+      <video controls>
+        <source src="VIDEO/✨𝕂𝕒𝕤𝕦𝕞𝕚✨.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>DIY Daisy Flower Pot Tutorial</h3>
+      <p>
+        The daisies appear to be crafted from felt or thick paper/foam, arranged in a small, decorated pot.
+      </p>
+      <a href="#" class="btn">View Tutorial</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+  <!-- Floating Upload Button -->
+  <button class="floating-upload-btn" id="open-upload-modal" title="Upload Your Creation" aria-label="Upload Your Creation">+</button>
+
+  <!-- Upload Modal -->
+  <div id="upload-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-upload-modal">&times;</span>
+      <h2>Upload Your Creation 🌸</h2>
+      <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <label for="creation-name">Creation Name:</label>
+        <input type="text" id="creation-name" name="creation_name" required>
+
+        <label for="creation-file">Select File:</label>
+        <input type="file" id="creation-file" name="creation_file" accept="image/*" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Write something about your creation..."></textarea>
+
+        <button type="submit" class="btn">Upload</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // ======== UPLOAD MODAL ========
+    const openModalBtn = document.getElementById('open-upload-modal');
+    const closeModalBtn = document.getElementById('close-upload-modal');
+    const modal = document.getElementById('upload-modal');
+
+    openModalBtn.addEventListener('click', () => modal.style.display = 'block');
+    closeModalBtn.addEventListener('click', () => modal.style.display = 'none');
+    window.addEventListener('click', e => { if (e.target === modal) modal.style.display = 'none'; });
+
+    // ======== HAMBURGER MENU ========
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      hamburger.classList.toggle("active"); // hamburger X animation
+    });
+
+    // ======== PROFILE DROPDOWN ========
+    const profileDropdown = document.querySelector(".profile-dropdown");
+    profileDropdown.addEventListener("click", e => {
+      e.stopPropagation();
+      profileDropdown.classList.toggle("active");
+    });
+    window.addEventListener("click", e => {
+      if (!profileDropdown.contains(e.target)) profileDropdown.classList.remove("active");
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 DIY Flower Studio | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://pinterest.com/" target="_blank"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+        <a href="https://tiktok.com/" target="_blank"><img src="tik-tok.png" alt="TikTok"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

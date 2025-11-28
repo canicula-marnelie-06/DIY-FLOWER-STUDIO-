@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | DIY Flower Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+  <link rel="stylesheet" href="css/order.css" /> 
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="home.html">
+        <img src="images/Logo.jpg" alt="DIY Flower Studio Logo">
+      </a>
+      <h3>DIY Flower Studio</h3>
+    </div>
+    
+    <!-- Navigation Links + Profile Dropdown -->
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     <li><a href="cartf.html">Cart</a></li>
+
+    <li class="profile-dropdown">
+          <img src="images/profile.jpg" alt="User Profile">
+          <ul class="dropdown-menu">
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="login.html">Logout</a></li>
+            <li><a href="ordertracking.html">Order Track</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Shop Section -->
+  <section class="shop-section">
+    <div class="shop-container">
+      <h1>Our Handmade Collection 🌸</h1>
+      <p>Discover our exclusive handcrafted product — made with care and creativity.</p>
+
+      <div class="product-grid">
+       <!-- Product 1 -->
+        <div class="product-card">
+          <img src="images/Lp/featured6.jpeg" alt="Lily + Tulip Bouquet">
+           <h3>Blue Lily + Tulip Bouquet</h3>
+            <p class="price">Php 520.00</p>
+
+      <form action="checkout.html" method="get" class="product-form">
+        <input type="hidden" name="product" value="Lily + Tulip Bouquet">
+        <input type="hidden" name="price" value="520.00">
+
+        <div class="button-group">
+         <label for="qty1" class="qty-label">Qty:</label>
+          <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+          <a href="cart copy1.html" class="btn">Add to Cart</a>
+          <a href="checkout.html" class="btn">Buy Now</a>
+        </div>
+      </form>
+    </div>
+
+     <!-- Product 2 -->
+      <div class="product-card">
+       <img src="images/Sp/product1.jpg" alt="Headband">
+       <h3>Daisy Headband</h3>
+       <p class="price">Php 58.00</p>
+
+       <form action="checkout.html" method="get" class="product-form">
+          <input type="hidden" name="product" value="Headband">
+          <input type="hidden" name="price" value="58.00">
+
+         <div class="button-group">
+            <label for="qty1" class="qty-label">Qty:</label>
+            <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+            <a href="cart copy.html" class="btn">Add to Cart</a>
+            <a href="checkout copy 2.html" class="btn">Buy Now</a>
+         </div>
+       </form>
+      </div>
+
+    <!-- Product 3 -->
+      <div class="product-card">
+        <img src="images/Sp/product3.jpg" alt="Headband">
+        <h3> Whimsical Headband</h3>
+        <p class="price">Php 108.00</p>
+      <form action="checkout.html" method="get" class="product-form">
+           <input type="hidden" name="product" value="Whimsical Headband">
+           <input type="hidden" name="price" value="108.00">
+
+        <div class="button-group">
+         <label for="qty1" class="qty-label">Qty:</label>
+          <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+          <a href="cart copy 2.html" class="btn">Add to Cart</a>
+          <a href="checkout copy 3.html" class="btn">Buy Now</a>
+        </div>
+      </form>
+        </div>
+
+   <!-- Product 4 -->
+      <div class="product-card">
+          <img src="images/Sp/product4.jpg" alt="Four leaf Keychain">
+          <h3>Four leaf Keychain</h3>
+          <p class="price">Php 79.00</p>
+        <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Four leaf Keychain">
+            <input type="hidden" name="price" value="79.00">
+
+          <div class="button-group">
+             <label for="qty1" class="qty-label">Qty:</label>
+             <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+             <a href="cart copy 3.html" class="btn">Add to Cart</a>
+             <a href="checkout copy 4.html" class="btn">Buy Now</a>
+          </div>
+        </form>
+      </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <img src="images/Sp/product5.jpg" alt="Vibrant Blossom Bouquet">
+          <h3>Vibrant Blossom Bouquet</h3>
+          <p class="price">Php 285.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Vibrant Blossom Bouquet">
+            <input type="hidden" name="price" value="285.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart copy 4.html" class="btn">Add to Cart</a>
+              <a href="checkout copy 5.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <img src="images/Sp/product6.jpg" alt="Sunshine Bliss Bouquet">
+          <h3>Sunshine Bliss Bouquet</h3>
+          <p class="price">Php 575.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Sunshine Bliss Bouquet">
+            <input type="hidden" name="price" value="575.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart copy 5.html" class="btn">Add to Cart</a>
+              <a href="checkout copy 6.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 7-->
+        <div class="product-card">
+          <img src="images/Lp/featured4.jpeg" alt="Lavender Bouquet">
+          <h3>Lavender Pot</h3>
+          <p class="price">$25.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart copy 6.html" class="btn">Add to Cart</a>
+              <a href="checkout copy 7.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <img src="images/Sp/product8.jpg" alt="Sunflower Pot">
+          <h3>Sunflower Pot</h3>
+          <p class="price">$30.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart copy 7.html" class="btn">Add to Cart</a>
+              <a href="checkout copy 8.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!---Product 9-->
+        <div class="product-card">
+          <img src="images/Lp/featured12.jpg" alt="Lavender Bouquet">
+          <h3>Lavender Pot</h3>
+          <p class="price">$25.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart copy 8.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+          <img src="images/Sp/product10.jpg" alt="Sunflower Pot">
+          <h3>Sunflower Pot</h3>
+          <p class="price">$30.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+        <!-- Product 11-->
+        <div class="product-card">
+          <img src="images/Sp/product11.jpg" alt="Creative Flower Art">
+          <h3>Creative Flower Art</h3>
+          <p class="price">$40.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 12-->
+        <div class="product-card">
+          <img src="images/Sp/product12.jpg" alt="Lavender Bouquet">
+          <h3>Lavender Pot</h3>
+          <p class="price">$25.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Product 13 -->
+        <div class="product-card">
+          <img src="images/Hp/Tulip_bouquet.jpg" alt="Sunflower Pot">
+          <h3>Sunflower Pot</h3>
+          <p class="price">$30.00</p>
+         <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 14-->
+        <div class="product-card">
+          <img src="images/Sp/product14.jpg" alt="Lavender Bouquet">
+          <h3>Lavender Pot</h3>
+          <p class="price">$25.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Product 15 -->
+        <div class="product-card">
+          <img src="images/Lp/featured3.jpeg" alt="Sunflower Pot">
+          <h3>Sunflower Pot</h3>
+          <p class="price">$30.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Product 16-->
+        <div class="product-card">
+          <img src="images/Hp/d6f590fa-faf8-4470-bed9-0bca6eb82ee1.jpeg" alt="Creative Flower Art">
+          <h3>Creative Flower Art</h3>
+          <p class="price">$40.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 17-->
+        <div class="product-card">
+          <img src="images/Sp/product17.jpg" alt="Lavender Bouquet">
+          <h3>Lavender Pot</h3>
+          <p class="price">$25.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+        <!-- Product 18 -->
+        <div class="product-card">
+          <img src="images/Sp/product18.jpg" alt="Sunflower Pot">
+          <h3>Sunflower Pot</h3>
+          <p class="price">$30.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Lavender Pot">
+            <input type="hidden" name="price" value="25.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 19-->
+        <div class="product-card">
+          <img src="images/Sp/product19.jpg" alt="Flower hair Accessories">
+          <h3>Flower hair Accessories</h3>
+          <p class="price">Php 115.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Flower hair Accessories">
+            <input type="hidden" name="price" value="115.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+        <!-- Product 20 -->
+        <div class="product-card">
+          <img src="images/Sp/product20.jpg" alt="Tulip flower keychains">
+          <h3>Tulip flower keychains</h3>
+          <p class="price">Php80.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Tulip flower keychains">
+            <input type="hidden" name="price" value="80.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 21-->
+        <div class="product-card">
+          <img src="images/Lp/featured5.jpeg" alt="Red and peach Fabric Flower Bouquet">
+          <h3>Red and peach Fabric Flower Bouquet</h3>
+          <p class="price">$530.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Red and peach Fabric Flower Bouquet">
+            <input type="hidden" name="price" value="530.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 22-->
+        <div class="product-card">
+          <img src="images/Sp/product22.jpeg" alt="purple tulip">
+          <h3>purple tulip</h3>
+          <p class="price">Php 130.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="purple tulip">
+            <input type="hidden" name="price" value="150.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!---Product 23-->
+        <div class="product-card">
+          <img src="images/Sp/product23.jpeg" alt="hyacinths Pot">
+          <h3>hyacinths Pot</h3>
+          <p class="price">$200.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="hyacinths Pot">
+            <input type="hidden" name="price" value="200.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+<!---Product 23-->
+        <div class="product-card">
+          <img src="images/FLOWR8.jpg" alt="hyacinths Pot">
+          <h3>hyacinths Pot</h3>
+          <p class="price">$200.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="hyacinths Pot">
+            <input type="hidden" name="price" value="200.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!---Product 23-->
+        <div class="product-card">
+          <img src="images/hc4.jpg" alt="hyacinths Pot">
+          <h3>hyacinths Pot</h3>
+          <p class="price">$200.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="hyacinths Pot">
+            <input type="hidden" name="price" value="200.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!---Product 23-->
+        <div class="product-card">
+          <img src="images/fb5.jpg" alt="hyacinths Pot">
+          <h3>hyacinths Pot</h3>
+          <p class="price">$200.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="hyacinths Pot">
+            <input type="hidden" name="price" value="200.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 24-->
+        <div class="product-card">
+          <img src="images/Sp/product24.jpeg" alt="Hyacinth flower Pot">
+          <h3>Pink Hyacinth flower Pot</h3>
+          <p class="price">Php 225.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Hyacinth flower Pot">
+            <input type="hidden" name="price" value="225.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 25-->
+        <div class="product-card">
+          <img src="images/Sp/product25.jpeg" alt="Blue Flax Flower Pot">
+          <h3>Blue Flax Flower Pot</h3>
+          <p class="price">Php 225.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Blue Flax Flower Pot">
+            <input type="hidden" name="price" value="225.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+
+        <!--Product 26-->
+        <div class="product-card">
+          <img src="images/Sp/product26.jpeg" alt="Tulip Pot">
+          <h3>Cute Tulip Pot</h3>
+          <p class="price">Php 332.00</p>
+          <form action="checkout.html" method="get" class="product-form">
+            <input type="hidden" name="product" value="Tulip Pot">
+            <input type="hidden" name="price" value="332.00">
+
+            <div class="button-group">
+              <label for="qty1" class="qty-label">Qty:</label>
+              <input type="number" id="qty1" name="quantity" min="1" max="10" value="1" class="qty-input">
+
+              <a href="cart.html" class="btn">Add to Cart</a>
+              <a href="checkout.html" class="btn">Buy Now</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 DIY Flower Studio | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://pinterest.com/" target="_blank"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Pinterest"></a>
+        <a href="https://tiktok.com/" target="_blank"><img src="tik-tok.png" alt="Pinterest"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

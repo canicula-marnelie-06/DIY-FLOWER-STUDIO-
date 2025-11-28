@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | DIY Flower Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body class="gallery-page">
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/Logo.jpg" alt="DIY Flower Studio Logo"></a>
+        <h3>DIY Flower Studio</h3>
+      </div>
+      <div id="hamburger" class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Shop.html">Shop</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Shop.html">Cart</a></li>
+
+        <li class="profile-dropdown">
+          <img src="images/profile.jpg" alt="User Profile">
+          <ul class="dropdown-menu">
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Gallery Hero (Public & Users) -->
+  <section class="gallery-hero">
+    <h1>Our Creative Gallery 🌷</h1>
+    <p>Explore beautiful handmade flower crafts, bouquets, pots, keychains, and headbands created with love and creativity.</p>
+  </section>
+
+  <!-- Public Gallery Grid -->
+  <section class="gallery-section">
+    <div class="gallery-container">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <a href="lavender bouquet.html">
+          <img src="images/Lavander.jpg" alt="Lavender Bouquet"></a>
+          <div class="overlay"><p>Lavender Bouquet</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/sunflowers.jpg" alt="Sunflowers Pot">
+          <div class="overlay"><p>Sunflower Pot</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic1.jpg" alt="Anthurium Design">
+          <div class="overlay"><p>Anthurium Design</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/lilies.jpg" alt="Pink Lilies">
+          <div class="overlay"><p>Pink Lilies</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic2.jpeg" alt="Strawberry Basket">
+          <div class="overlay"><p>Strawberry Basket</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic3.jpeg" alt="Big Sunflower">
+          <div class="overlay"><p>Big Sunflower</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic4.jpeg" alt="Japanese Anemone">
+          <div class="overlay"><p>Japanese Anemone</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic6.jpeg" alt="Stargazer lily">
+          <div class="overlay"><p>Stargazer Lily</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic7.jpeg" alt="Daylily">
+          <div class="overlay"><p>Daylily</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic8.jpeg" alt="Blue lilies">
+          <div class="overlay"><p>Blue Lilies</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic5.jpg" alt="Fuzzy Keychain">
+          <div class="overlay"><p>Fuzzy Keychain</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic10.jpeg" alt="Tulip + Daisy">
+          <div class="overlay"><p>Tulip + Daisy</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- User Featured Categories (Logged-in) -->
+  <section class="user-gallery-page">
+    <div class="featured-section">
+      <h2>Gallery 🌸</h2>
+
+      <div class="featured-category">
+        <h3>Flower Pots 🪴</h3>
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/Sunflowers.jpg" alt="Sunflower Pot">
+            <h4>Sunflower Pot</h4>
+          </div>
+          <div class="featured-card">
+            <img src="images/Lavander.jpg" alt="Lavender Pot">
+            <h4>Lavender Pot</h4>
+          </div>
+          <div class="featured-card">
+            <img src="images/Sp/product18.jpg" alt="Lavender Pot">
+            <h4>Lavender Pot</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured-category">
+        <h3>Bouquets 💐</h3>
+        <div class="featured-grid">
+          <div class="featured-card">
+            <img src="images/Hp/Product1.jpg" alt="Pink Lilies">
+            <h4>Pink Lilies</h4>
+          </div>
+          <div class="featured-card">
+            <img src="images/Sp/product6.jpg" alt="Tulip Bouquet">
+            <h4>Tulip Bouquet</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Upload Button -->
+    <button class="floating-upload-btn" id="open-upload-modal" title="Upload Your Creation">+</button>
+
+    <!-- Upload Modal -->
+    <div id="upload-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="close-upload-modal">&times;</span>
+        <h2>Upload Your Creation 🌸</h2>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+          <label for="creation-name">Creation Name:</label>
+          <input type="text" id="creation-name" name="creation_name" required>
+          <label for="creation-file">Select File:</label>
+          <input type="file" id="creation-file" name="creation_file" accept="image/*" required>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="4" placeholder="Write something about your creation..."></textarea>
+          <button type="submit" class="btn">Upload</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 DIY Flower Studio | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="tik-tok.png" alt="TikTok"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Petals -->
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+
+  <!-- Scripts -->
+  <script>
+    // Scroll reveal for gallery items
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const revealOnScroll = () => {
+      galleryItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 50) item.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Profile dropdown toggle
+    const profileDropdown = document.querySelector('.profile-dropdown');
+    profileDropdown.addEventListener('click', e => {
+      e.stopPropagation();
+      profileDropdown.classList.toggle('active');
+    });
+    window.addEventListener('click', e => {
+      if(!profileDropdown.contains(e.target)) profileDropdown.classList.remove('active');
+    });
+
+    // Upload modal
+    const openModalBtn = document.getElementById('open-upload-modal');
+    const closeModalBtn = document.getElementById('close-upload-modal');
+    const modal = document.getElementById('upload-modal');
+    openModalBtn.addEventListener('click', () => modal.style.display = 'flex');
+    closeModalBtn.addEventListener('click', () => modal.style.display = 'none');
+    window.addEventListener('click', e => { if(e.target === modal) modal.style.display = 'none'; });
+  </script>
+
+</body>
+</html>

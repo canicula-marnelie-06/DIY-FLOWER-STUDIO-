@@ -1,0 +1,55 @@
+<nav class="navbar">
+
+  <!-- Logo -->
+  <div class="logo">
+    <a href="home.html">
+      <img src="images/Logo.jpg" alt="DIY Flower Studio Logo">
+    </a>
+    <h3>DIY Flower Studio</h3>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <!-- Navigation Links / Sidebar -->
+  <ul class="nav-links">
+    <li><a href="home.html" class="active">Home</a></li>
+    <li><a href="tutorials.html">Tutorials</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <!-- Profile Dropdown -->
+    <li class="profile-dropdown">
+      <img src="images/profile.jpg" alt="User Profile" />
+      <ul class="dropdown-menu">
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  // Profile dropdown toggle
+  const profileDropdown = document.querySelector('.profile-dropdown');
+  if (profileDropdown) {
+    profileDropdown.addEventListener('click', () => {
+      profileDropdown.classList.toggle('active');
+    });
+  }
+
+  // Close mobile menu when clicking on any link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      const menuToggle = document.getElementById('menu-toggle');
+      if (menuToggle.checked) menuToggle.checked = false;
+    });
+  });
+</script>

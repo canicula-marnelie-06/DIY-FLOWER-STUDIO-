@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | DIY Flower Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/setting.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/Logo.jpg" alt="DIY Flower Studio Logo"></a>
+        <h3>DIY Flower Studio</h3>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="profile.html" class="active">My Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Settings Section -->
+  <main>
+    <div class="settings-container">
+
+      <div class="settings-card">
+        <h2>Account Settings</h2>
+        <p>Manage your personal information and account preferences.</p>
+
+        <!-- Avatar Preview -->
+        <div class="avatar-preview" style="text-align:center; margin-bottom:25px;">
+          <img src="images/profile.jpg" alt="Profile Avatar" style="width:120px; height:120px; border-radius:50%; border:3px solid #FF6FA5; object-fit:cover;">
+          <p style="font-size:0.9rem; margin-top:8px; color:#555;">Click to change profile picture</p>
+        </div>
+
+        <!-- Main Form -->
+        <form action="profile.html" method="GET" class="settings-form">
+
+          <label for="username">Username</label>
+          <input type="text" id="username" value="Jane Doe">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" value="janedoe@example.com">
+
+          <label for="password">Change Password</label>
+          <input type="password" id="password" autocomplete="new-password" placeholder="New Password">
+
+          <label for="bio">Bio</label>
+          <textarea id="bio" rows="3"> Loner • Adv119 • she/her </textarea>
+
+          <!-- Buttons -->
+          <div class="settings-buttons">
+            <button type="submit" class="btn save-btn">Save Changes</button>
+            <a href="profile.html" class="btn cancel-btn">Cancel</a>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 DIY Flower Studio | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="https://facebook.com"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://pinterest.com"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://twitter.com"><img src="twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

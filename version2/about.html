@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | DIY Flower Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="home.html">
+        <img src="images/Logo.jpg" alt="DIY Flower Studio Logo">
+      </a>
+      <h3>DIY Flower Studio</h3>
+    </div>
+
+    <!-- Hamburger -->
+    <div id="hamburger" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <!-- Navigation Links -->
+    <ul id="nav-links" class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="Shop.html">Shop</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="Shop.html">Cart</a></li>
+
+      <li class="profile-dropdown">
+        <img src="images/profile.jpg" alt="User Profile" />
+        <ul class="dropdown-menu">
+          <li><a href="profile.html">My Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+          <li><a href="login.html">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </nav>
+</header>
+
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <h1>About DIY Flower Studio 🌸</h1>
+      <p>
+        DIY Flower Studio began as a passion project dedicated to the art of handmade flower crafts.
+        Our goal is to inspire creativity and bring the beauty of nature into homes through elegant,
+        handcrafted designs made with love by our team of dedicated makers.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <img src="images/crafting.jpg" alt="Crafting">
+          <h3>Our Mission</h3>
+          <p>To empower individuals to create beautiful art from simple materials, spreading joy and imagination through every handmade piece.</p>
+        </div>
+
+        <div class="about-card">
+          <img src="images/74fcf8d3c82740f637e89068ad67089b.jpg" alt="Flowers">
+          <h3>Our Vision</h3>
+          <p>We envision a world where art, creativity, and sustainability come together to celebrate the beauty of handmade crafts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Meet the Makers Section -->
+<section class="about-makers">
+  <h2>Meet Our Makers 🌸</h2>
+  <p class="makers-intro">
+    Behind every handcrafted flower is a creative heart. Our team of passionate makers brings together unique styles, skills, and imagination to make every design special.
+  </p>
+
+  <div class="makers-grid">
+
+    <!-- Maker 1 -->
+    <div class="maker-card">
+      <div class="maker-card-inner">
+        <div class="maker-card-front">
+          <img src="images/profile.jpg" alt="Adeel Lumabas">
+          <h3>Adeel Lumabas</h3>
+          <p>Founder & Lead Designer</p>
+        </div>
+        <div class="maker-card-back">
+          <p>Passionate about creating realistic floral designs from paper and wire. Fun fact: Loves experimenting with pastel colors 🌷.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maker 2 -->
+    <div class="maker-card">
+      <div class="maker-card-inner">
+        <div class="maker-card-front">
+          <img src="images/DP.jpg" alt="Marnelie Canicula">
+          <h3>Marnelie Canicula</h3>
+          <p>Paper Flower Artist</p>
+        </div>
+        <div class="maker-card-back">
+          <p>Expert in crafting delicate blooms with attention to detail. Fun fact: Inspired by the textures of real flowers 🌼.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maker 3 -->
+    <div class="maker-card">
+      <div class="maker-card-inner">
+        <div class="maker-card-front">
+          <img src="images/maker3.jpg" alt="Elmae Moreno">
+          <h3>Elmae Moreno</h3>
+          <p>Creative Director</p>
+        </div>
+        <div class="maker-card-back">
+          <p>Guides the aesthetic direction of each project, ensuring every piece is unique and beautiful. Fun fact: Loves pastel sketches ✨.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maker 4 -->
+    <div class="maker-card">
+      <div class="maker-card-inner">
+        <div class="maker-card-front">
+          <img src="images/maker4.jpg" alt="Iries Buendia">
+          <h3>Iries Buendia</h3>
+          <p>Photography & Design</p>
+        </div>
+        <div class="maker-card-back">
+          <p>Captures the beauty of every creation and handles digital design. Fun fact: Enjoys photographing real flowers 🌿.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="floating-petals">
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+</div>
+
+
+  <!-- Call to Action -->
+  <section class="about-cta">
+    <h2>Join Our Creative Community 🌼</h2>
+    <p>
+      Discover tutorials, ideas, and inspiration to craft your own floral creations.
+      Let’s bring art and nature together, one flower at a time.
+    </p>
+    <a href="tutorials.html" class="btn">Explore Tutorials</a>
+  </section>
+
+  <script>
+  // Hamburger menu
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    hamburger.classList.toggle("active");
+  });
+
+  // Profile dropdown
+  const profileDropdown = document.querySelector(".profile-dropdown");
+  profileDropdown.addEventListener("click", e => {
+    e.stopPropagation(); // prevents the window click from closing it immediately
+    profileDropdown.classList.toggle("active");
+  });
+
+  // Close dropdown if clicking outside
+  window.addEventListener("click", e => {
+    if (!profileDropdown.contains(e.target)) {
+      profileDropdown.classList.remove("active");
+    }
+  });
+</script>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 DIY Flower Studio | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://pinterest.com/" target="_blank"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Pinterest"></a>
+        <a href="https://tiktok.com/" target="_blank"><img src="tik-tok.png" alt="Pinterest"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

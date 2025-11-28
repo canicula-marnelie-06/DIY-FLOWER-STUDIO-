@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | DIY Flower Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body class="gallery-page">
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="home.html"><img src="images/Logo.jpg" alt="DIY Flower Studio Logo"></a>
+        <h3>DIY Flower Studio</h3>
+      </div>
+      <div id="hamburger" class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="landingpage.html">Home</a></li>
+        <li><a href="PublicGallery.html" class="active">Gallery</a></li>
+        <li><a href="PublicAbout.html">About</a></li>
+        <li><a href="PublicContact.html">Contact</a></li>
+        <li><a href="login.html" class="highlight">Join Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="gallery-hero">
+    <h1>Our Creative Gallery 🌷</h1>
+    <p>Explore beautifully handcrafted flower bouquets, pots, keychains, and headbands made with love and creativity.</p>
+  </section>
+
+  <!-- Public Gallery Grid -->
+  <section class="gallery-section">
+    <div class="gallery-container">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/Lavander.jpg" alt="Lavender Bouquet">
+          <div class="overlay"><p>Lavender Bouquet</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/sunflowers.jpg" alt="Sunflower Pot">
+          <div class="overlay"><p>Sunflower Pot</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic1.jpg" alt="Anthurium Design">
+          <div class="overlay"><p>Anthurium Design</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/lilies.jpg" alt="Pink Lilies">
+          <div class="overlay"><p>Pink Lilies</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic2.jpeg" alt="Strawberry Basket">
+          <div class="overlay"><p>Strawberry Basket</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic3.jpeg" alt="Big Sunflower">
+          <div class="overlay"><p>Big Sunflower</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic4.jpeg" alt="Japanese Anemone">
+          <div class="overlay"><p>Japanese Anemone</p></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/Gp/Pic6.jpeg" alt="Stargazer Lily">
+          <div class="overlay"><p>Stargazer Lily</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <h2>Want to Create Your Own Bloom?</h2>
+    <p>Join DIY Flower Studio and start crafting your handmade floral art today.</p>
+    <a href="login.html" class="btn">Join Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 DIY Flower Studio | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="tik-tok.png" alt="TikTok"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Petals -->
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+
+  <!-- Scripts -->
+  <script>
+    // Scroll reveal for gallery items
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const revealOnScroll = () => {
+      galleryItems.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 50) item.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

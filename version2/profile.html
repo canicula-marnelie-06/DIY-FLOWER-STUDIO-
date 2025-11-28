@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | DIY Flower Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+  <div class="logo">
+    <a href="home.html"><img src="images/Logo.jpg" alt="Logo"></a>
+    <h3>DIY Flower Studio</h3>
+  </div>
+
+    <!-- Hamburger -->
+  <div id="hamburger" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="tutorials.html">Tutorials</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="profile-dropdown" tabindex="0">
+      <img src="images/profile.jpg" alt="User Profile">
+      <ul class="dropdown-menu">
+        <li><a href="profile.html" class="highlight">My Profile</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </li>
+   </ul>
+  </nav>
+</header>
+
+
+  <!-- Profile Section -->
+  <main>
+    <section class="profile-container">
+
+      <section class="profile-banner">
+        <div class="profile-info">
+          <img src="images/profile.jpg" alt="Jane Doe profile picture" class="profile-avatar">
+        <div class="profile-text">
+          <h2>Jane Doe</h2>
+          <p class="bio">Loner • Adv119 • she/her</p>
+        <div class="stats">
+           <span><strong>1</strong> Follower</span>
+           <span><strong>180</strong> Following</span>
+        </div>
+       </div>
+      <div class="profile-actions">
+        <button class="edit-btn" onclick="window.location.href='settings.html'">
+        Edit Profile</button>
+        <button class="share-btn">Share</button>
+      </div>
+      </divdiv>
+    </section>
+
+    <section class="profile-tabs">
+
+     <!-- Hidden radio buttons -->
+        <input type="radio" name="tabset" id="created-tab" checked>
+        <input type="radio" name="tabset" id="saved-tab">
+
+      <!-- Tab Labels -->
+     <div class="tabs">
+        <label for="created-tab" class="tab-label">Created</label>
+        <label for="saved-tab" class="tab-label">Saved</label>
+     </div>
+
+  <!-- Tab Content Panels -->
+  <div class="tab-panels">
+    <div class="tab-panel" id="created-panel">
+    <h3>Your Created Content</h3>
+
+  <div class="card-grid">
+    <div class="card">
+      <img src="images/Lp/featured7.jpeg" alt="Flower Art">
+      <h4>Rose Origami</h4>
+    </div>
+
+    <div class="card">
+      <img src="images/Sp/product15.jpg" alt="Flower Art">
+      <h4>Pink Paper Tulips</h4>
+    </div>
+
+    <div class="card">
+      <img src="images/Sp/product11.jpg" alt="Flower Art">
+      <h4>Floral Wreath</h4>
+    </div>
+  </div>
+</div>
+
+<!-- SAVED CONTENT -->
+<div class="tab-panel" id="saved-panel">
+  <h3>Your Saved Items</h3>
+
+  <div class="card-grid">
+    <div class="card">
+      <img src="images/Sunflower.jpg" alt="Flower Art">
+      <h4>Garden Daisy Bundle</h4>
+    </div>
+
+    <div class="card">
+      <img src="images/Sp/product19.jpg" alt="Flower Art">
+      <h4>Lavender Fold</h4>
+    </div>
+
+    <div class="card">
+      <img src="images/Lp/featured2.jpeg" alt="Flower Art">
+      <h4>Garden Daisy Bundle</h4>
+    </div>
+
+    <div class="card">
+      <img src="images/Lp/featured13.jpg" alt="Flower Art">
+      <h4>Lavender Fold</h4>
+    </div>
+     </div>
+   </div>
+ </section>
+</main>
+
+<script>
+  // ======== UPLOAD MODAL ========
+  const openModalBtns = document.querySelectorAll('#open-upload-modal');
+  const closeModalBtn = document.getElementById('close-upload-modal');
+  const modal = document.getElementById('upload-modal');
+
+  openModalBtns.forEach(btn => {
+    btn.addEventListener('click', () => modal.style.display = 'block');
+  });
+
+  closeModalBtn.addEventListener('click', () => modal.style.display = 'none');
+
+  window.addEventListener('click', e => {
+    if (e.target === modal) modal.style.display = 'none';
+  });
+
+  // ======== HAMBURGER MENU ========
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  const profileDropdown = document.querySelector(".profile-dropdown");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    hamburger.classList.toggle("active"); // hamburger X animation
+  });
+
+  // ======== PROFILE DROPDOWN ========
+  profileDropdown.addEventListener("click", e => {
+      e.stopPropagation(); // prevent window click from closing immediately
+      profileDropdown.classList.toggle("active");
+  });
+
+  // Close dropdown if clicking outside
+  window.addEventListener("click", e => {
+    if (!profileDropdown.contains(e.target)) {
+      profileDropdown.classList.remove("active");
+    }
+  });
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 DIY Flower Studio | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="https://facebook.com/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://pinterest.com/" target="_blank"><img src="pinterest.png" alt="Pinterest"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="twitter.png" alt="Pinterest"></a>
+        <a href="https://tiktok.com/" target="_blank"><img src="tik-tok.png" alt="Pinterest"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
