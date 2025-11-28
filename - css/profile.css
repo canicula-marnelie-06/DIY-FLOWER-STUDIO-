@@ -1,0 +1,237 @@
+/* ----------------------------------------------------------
+   GLOBAL
+---------------------------------------------------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf7;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+/* Centered container wrapper */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+
+/* ----------------------------------------------------------
+   PROFILE BANNER
+---------------------------------------------------------- */
+.profile-banner {
+  background: #f0ebeb;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.profile-container {
+  display: block;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* Profile layout */
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ff6fa5;
+}
+
+/* Profile text */
+.profile-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+.profile-text h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color:#ff6fa5;
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 6px;
+}
+
+.stats span {
+  margin-right: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.stats strong {
+  color: #ff6fa5;
+}
+
+/* Profile buttons */
+.profile-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.edit-btn,
+.share-btn {
+  background: #ff6fa5;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.edit-btn:hover,
+.share-btn:hover {
+  background: #d26a85;
+}
+
+
+/* ----------------------------------------------------------
+   TABS (CSS-ONLY)
+---------------------------------------------------------- */
+.profile-tabs {
+  background: #f0dfe9;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Hide radio buttons */
+.profile-tabs input[type="radio"] {
+  display: none;
+}
+
+/* Tab Buttons */
+.tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab-label {
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s;
+}
+
+/* Active tab underline */
+#created-tab:checked ~ .tabs label[for="created-tab"],
+#saved-tab:checked   ~ .tabs label[for="saved-tab"] {
+  color: #000;
+  border-bottom: 3px solid #ff6fa5;
+}
+
+/* Tab Content */
+.tab-panels {
+  margin-top: 25px;
+}
+
+.tab-panel {
+  display: none;
+  animation: fade 0.3s ease;
+}
+
+#created-tab:checked ~ .tab-panels #created-panel,
+#saved-tab:checked   ~ .tab-panels #saved-panel {
+  display: block;
+}
+
+/* Fade animation */
+@keyframes fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+/* ----------------------------------------------------------
+   CARDS (Created & Saved Content)
+---------------------------------------------------------- */
+.card-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card h4 {
+  padding: 12px 14px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.card:hover h4 {
+  color: #ff6fa5;
+}
+
+
+/* ----------------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------------- */
+@media (max-width: 768px) {
+  .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-actions {
+    justify-content: center;
+  }
+
+  .tabs {
+    justify-content: center;
+  }
+}

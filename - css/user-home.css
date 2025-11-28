@@ -1,0 +1,183 @@
+/* ------------------------------
+   DIY Flower Studio — Home Page
+------------------------------ */
+
+/*  Welcome Section */
+.welcome-section {
+  background: linear-gradient(135deg, #f7d9e3, #d6f0ff);
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #333;
+}
+
+.welcome-section h1 {
+  color: #b25d8d;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.welcome-section p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+  color: #444;
+  font-size: 1.05rem;
+}
+
+.welcome-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/*  Buttons */
+.btn {
+  background: #b25d8d;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #994d79;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #b25d8d;
+  color: #b25d8d;
+}
+
+.btn-outline:hover {
+  background: #b25d8d;
+  color: #fff;
+}
+
+/* ------------------------------
+   Featured Section
+------------------------------ */
+.featured-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fffafc;
+}
+
+.featured-section h2 {
+  color: #b25d8d;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/*  Featured Grid */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Featured Card */
+.featured-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.featured-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.featured-card:hover img {
+  transform: scale(1.05); /*  zoom-in effect */
+}
+
+.featured-card h3 {
+  color: #333;
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featured-card img {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+/*  Featured Categories */
+.featured-category {
+  margin-bottom: 3rem;
+}
+
+.featured-category h3 {
+  color: #b25d8d;
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.featured-category h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #b25d8d;
+  margin: 0.4rem auto;
+  border-radius: 2px;
+}
+
+/*  Featured Card Titles (inside each category) */
+.featured-card h4 {
+  color: #333;
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem;
+  font-weight: 500;
+}
+
+/*  Small-Screen Adjustments */
+@media (max-width: 480px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .welcome-section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/*  Subtle Fade-In Animation (optional) */
+.featured-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

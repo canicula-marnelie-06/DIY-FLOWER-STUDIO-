@@ -1,0 +1,72 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff5f8;
+  margin: 0;
+  padding: 0;
+}
+
+.thankyou-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  height: 80vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.thankyou-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  max-width: 500px;
+
+}
+.thanks-icon {
+  width: 90px;
+  margin-bottom: 1rem;
+}
+
+.thankyou-card h1 {
+  color: #b44b7a;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.thankyou-card p {
+  color: #444;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.thankyou-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #d67aa3;
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #b44b7a;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #d67aa3;
+  color: #b44b7a;
+}
+
+.btn-outline:hover {
+  background: #d67aa3;
+  color: white;
+}

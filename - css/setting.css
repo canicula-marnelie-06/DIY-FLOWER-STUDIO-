@@ -1,0 +1,154 @@
+/* ----------------------------------------------------------
+   GLOBAL
+---------------------------------------------------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf7;
+  margin: 0;
+  padding: 0;
+}
+
+main, section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Container wrapper */
+.settings-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 0 15px;
+}
+
+/* ----------------------------------------------------------
+   SETTINGS CARD
+---------------------------------------------------------- */
+.settings-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.settings-card h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #FF6FA5;
+}
+
+.settings-card p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* ----------------------------------------------------------
+   FORM STYLING
+---------------------------------------------------------- */
+.settings-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.settings-form input,
+.settings-form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.settings-form input:focus,
+.settings-form textarea:focus {
+  outline: none;
+  border-color: #FF6FA5;
+  box-shadow: 0 0 6px rgba(255, 111, 165, 0.3);
+}
+
+.settings-form textarea {
+  resize: vertical;
+}
+
+/* ----------------------------------------------------------
+   BUTTONS
+---------------------------------------------------------- */
+.settings-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 22px;
+  font-weight: 500;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.save-btn {
+  background: #FF6FA5;
+  color: #fff;
+}
+
+.save-btn:hover {
+  background: #E45890;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background: #fff;
+  color: #FF6FA5;
+  border: 2px solid #FF6FA5;
+}
+
+.cancel-btn:hover {
+  background: #FF6FA5;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ----------------------------------------------------------
+   FOOTER
+---------------------------------------------------------- */
+footer {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px 0;
+  color: #555;
+}
+
+footer .social-icons a img {
+  width: 28px;
+  height: 28px;
+  margin: 0 6px;
+  transition: transform 0.2s;
+}
+
+footer .social-icons a img:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------------------------------------------------
+   RESPONSIVE
+---------------------------------------------------------- */
+@media (max-width: 768px) {
+  .settings-card {
+    padding: 30px 20px;
+  }
+
+  .settings-buttons {
+    justify-content: center;
+  }
+}

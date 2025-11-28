@@ -1,0 +1,276 @@
+/* ----------------------------------------------------
+   GALLERY PAGE (Public Gallery for visitors)
+   File: Gallery.html
+---------------------------------------------------- */
+.gallery-page {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.gallery-page .gallery-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: #ffffff;
+}
+
+.gallery-page .gallery-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.gallery-page .gallery-hero p {
+  font-size: 1.2rem;
+}
+
+/* Gallery Grid */
+.gallery-page .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.gallery-page .gallery-item {
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-page .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.gallery-page .gallery-item:hover img {
+  transform: scale(1.07);
+}
+
+/* CTA Section */
+.gallery-page .cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffe9f0;
+  margin-top: 40px;
+}
+
+.gallery-page .cta h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.gallery-page .cta p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.gallery-page .cta .btn {
+  display: inline-block;
+  background: #ff5ba7;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .3s ease;
+}
+
+.gallery-page .cta .btn:hover {
+  background: #e64d92;
+}
+
+/* ----------------------------------------------------
+   USER GALLERY PAGE (Logged-in user gallery)
+   File: PublicGallery.html
+---------------------------------------------------- */
+.user-gallery-page {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 120px;
+}
+
+/* Section Title */
+.user-gallery-page .featured-section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.user-gallery-page .featured-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Category Title */
+.user-gallery-page .featured-category h3 {
+  font-size: 1.6rem;
+  margin: 25px 0 15px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+/* Gallery Grid */
+.user-gallery-page .featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+/* Cards */
+.user-gallery-page .featured-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.user-gallery-page .featured-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.user-gallery-page .featured-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* Floating Upload Button */
+.user-gallery-page .floating-upload-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  font-size: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #ff5ba7;
+  color: #fff;
+  cursor: pointer;
+  transition: transform .3s ease;
+  z-index: 999;
+}
+
+.user-gallery-page .floating-upload-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Upload Modal */
+.user-gallery-page .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-gallery-page .modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+}
+
+.user-gallery-page .close-btn {
+  float: right;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* ==============================
+   Fade-in + Lift on Scroll
+============================== */
+
+.gallery-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.gallery-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==============================
+   Soft Bloom Glow on Hover
+============================== */
+
+.gallery-item:hover {
+  box-shadow: 0 10px 25px rgba(178, 93, 141, 0.25);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item img {
+  transition: transform 0.4s ease;
+}
+
+/* Subtle glow overlay */
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 200, 230, 0.35) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* ==============================
+   Floating Petals Background
+============================== */
+
+.petal {
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: rgba(255, 182, 193, 0.5);
+  border-radius: 50% 70% 50% 70%;
+  filter: blur(1px);
+  animation: floatPetal 14s linear infinite;
+  z-index: -1; /* stays behind gallery */
+}
+
+@keyframes floatPetal {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(120vh) translateX(50px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+/* Create multiple petals */
+.petal:nth-child(1) { left: 10%; animation-duration: 18s; }
+.petal:nth-child(2) { left: 30%; animation-duration: 15s; }
+.petal:nth-child(3) { left: 50%; animation-duration: 20s; }
+.petal:nth-child(4) { left: 70%; animation-duration: 16s; }
+.petal:nth-child(5) { left: 85%; animation-duration: 19s; }

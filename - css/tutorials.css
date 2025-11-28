@@ -1,0 +1,117 @@
+/* =============================
+   Tutorials Section
+============================= */
+.tutorials {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fffafc;
+}
+
+.tutorials h1 {
+  font-size: 2rem;
+  color: #b25d8d;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.tutorials .intro {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* Grid for tutorials */
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Individual tutorial card */
+.tutorial-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 345px;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Video inside card */
+.tutorial-card video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Card content */
+.tutorial-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.tutorial-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+/* Buttons */
+.tutorial-card .btn {
+  background: #b25d8d;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.tutorial-card .btn:hover {
+  background: #994d79;
+}
+
+/* =============================
+   Responsive Breakpoints
+============================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .tutorials h1 { font-size: 1.8rem; }
+  .tutorials .intro { font-size: 0.95rem; }
+  .tutorial-grid { gap: 1.5rem; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .tutorials {
+    padding: 3rem 1.5rem;
+  }
+  .tutorials h1 { font-size: 1.6rem; }
+  .tutorials .intro { font-size: 0.9rem; }
+  .tutorial-card { padding: 0.8rem; }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .tutorials h1 { font-size: 1.4rem; }
+  .tutorials .intro { font-size: 0.85rem; }
+  .tutorial-card h3 { font-size: 1rem; }
+  .tutorial-card p { font-size: 0.85rem; }
+  .tutorial-card .btn { padding: 0.5rem 0.8rem; font-size: 0.9rem; }
+}

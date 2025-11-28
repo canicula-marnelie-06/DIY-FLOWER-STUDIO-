@@ -1,0 +1,112 @@
+/* ------------------------------
+   Login Page Styles
+------------------------------ */
+
+.login-section {
+  background: linear-gradient(135deg, #f7d9e3, #d6f0ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-container {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container h2 {
+  color: #b25d8d;
+  margin-bottom: 0.5rem;
+}
+
+.login-container p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.login-form .form-group {
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.login-form label {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #b25d8d;
+}
+
+.btn {
+  background: #b25d8d;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  width: 90%;
+  margin: 1.2rem auto 1.8rem auto;
+  display: block;
+}
+
+.btn:hover {
+  background: #994d79;
+}
+
+
+.login-text {
+  margin-top: 1.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.login-text a {
+  color: #b25d8d;
+  text-decoration: none;
+}
+
+.login-text a:hover {
+  text-decoration: underline;
+}
+
+.login-buttons {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.login-buttons .btn {
+  background: #b25d8d;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.login-buttons .btn:hover {
+  background: #994d79;
+}
+
